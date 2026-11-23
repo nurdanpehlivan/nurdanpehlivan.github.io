@@ -433,7 +433,7 @@ const AWARDS = [
     text: { tr: 'UDHAM 4. Erişilebilir Türkiye 2053 Ar-Ge Fikir Yarışması — raylı sistemlerde çift duyusal engelliler için BLE tabanlı dokunsal uyarı sistemi.', en: 'UDHAM 4th Accessible Türkiye 2053 R&D Idea Competition — a BLE-based haptic warning system for deafblind passengers in rail systems.' } },
   { icon: '🏕️', img: 'assets/kamp/photo-1.jpg', gallery: [1, 2, 3, 4].map(i => `assets/kamp/photo-${i}.jpg`), date: { tr: 'Ekim 2026', en: 'October 2026' }, title: { tr: 'Kamp+ Bilişim Kampı', en: 'Kamp+ IT Camp' },
     text: { tr: 'T.C. Gençlik ve Spor Bakanlığı & Turkcell Akademi — Android, Kotlin ve Jetpack Compose eğitimi.', en: 'Ministry of Youth and Sports & Turkcell Academy — Android, Kotlin and Jetpack Compose training.' } },
-  { icon: '🌍', img: 'assets/esc/photo-1.jpg', gallery: [1, 2, 3, 4, 5].map(i => `assets/esc/photo-${i}.jpg`), date: { tr: 'Temmuz – Ağustos 2026', en: 'Jul – Aug 2026' }, title: 'European Solidarity Corps',
+  { icon: '🌍', img: 'assets/esc/photo-5.jpg', gallery: [5, 1, 2, 3, 4].map(i => `assets/esc/photo-${i}.jpg`), date: { tr: 'Temmuz – Ağustos 2026', en: 'Jul – Aug 2026' }, title: 'European Solidarity Corps',
     text: { tr: 'Gönüllü, Sólheimar, İzlanda — çok uluslu ekipte İngilizce çalışma ortamı.', en: 'Volunteer, Sólheimar, Iceland — English-speaking work environment in a multinational team.' } },
   { icon: '📄', date: 'ICENSS 2026', title: { tr: 'Tam metin bildiri', en: 'Full paper' },
     text: '“Development of an Educational and Interactive Mobile Application for Children that Teaches Food Production Processes”' },
