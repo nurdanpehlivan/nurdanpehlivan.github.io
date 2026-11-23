@@ -216,7 +216,10 @@ function renderProjects() {
   grid.innerHTML = PROJECTS.map(p => `
     <article class="card reveal ${p.featured ? 'featured' : ''}" data-id="${p.id}" tabindex="0" role="button" aria-label="${L(p.title)}">
       <div class="card-media" style="background:${p.icon.bg || 'radial-gradient(circle at 30% 20%, #ffe9d6, #e9f7ef 70%)'}">
-        ${p.shots ? `<div class="shots">${p.shots.slice(0, 3).map(s => `<img src="${s}" alt="" loading="lazy">`).join('')}</div>` : `<span class="art">${p.icon.emoji}</span>`}
+        ${p.cover ? `<img class="cover" src="${p.cover}" alt="" loading="lazy">`
+          : p.shots ? `<div class="shots">${p.shots.slice(0, 3).map(s => `<img src="${s}" alt="" loading="lazy">`).join('')}</div>`
+          : p.icon.logo ? `<img class="logo${p.icon.wide ? ' wide' : ''}" src="${p.icon.logo}" alt="${L(p.title)}" loading="lazy">`
+          : `<span class="art">${p.icon.emoji}</span>`}
       </div>
       <div class="card-body">
         <div class="card-meta"><span>${p.year}</span><span class="badge ${p.live ? 'live' : ''}">${L(p.badge)}</span></div>
@@ -274,7 +277,7 @@ function openProject(id) {
   openId = id;
   modalBody.innerHTML = `
     <div class="modal-hero">
-      <div class="m-icon" style="background:${p.icon.bg || 'transparent'}">${p.icon.img ? `<img src="${p.icon.img}" alt="">` : p.icon.emoji}</div>
+      <div class="m-icon" style="background:${p.icon.bg || 'transparent'}">${p.icon.img || (p.icon.logo && !p.icon.wide) ? `<img src="${p.icon.img || p.icon.logo}" alt="">` : p.icon.emoji}</div>
       <div><h3 id="modalTitle">${L(p.title)}</h3><p class="m-sub">${L(p.subtitle)} · ${p.year}</p></div>
     </div>
     <p class="m-desc">${L(p.desc)}</p>
@@ -291,7 +294,7 @@ function openProject(id) {
     ${p.links.length ? `<div class="modal-links">${p.links.map(l => l.play
       ? `<a class="btn play" href="${l.url}" target="_blank" rel="noopener">${PLAY_ICON}<span>${T('projects.play')}</span></a>`
       : `<a class="btn ghost" href="${l.url}" target="_blank" rel="noopener">${l.label} <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>`).join('')}</div>` : ''}
-    ${p.links.some(l => l.play) ? `<p class="play-note">${T('projects.playNote')}</p>` : ''}
+    ${p.playTest && p.links.some(l => l.play) ? `<p class="play-note">${T('projects.playNote')}</p>` : ''}
   `;
   modal.hidden = false;
   document.body.style.overflow = 'hidden';
@@ -461,7 +464,7 @@ addEventListener('keydown', e => {
 // ---------- Apply language ----------
 function applyLang() {
   document.documentElement.lang = lang;
-  document.title = lang === 'tr' ? 'Nurdan Pehlivan · Android Developer' : 'Nurdan Pehlivan · Android Developer';
+  document.title = 'Nurdan Pehlivan · Android Developer & Project Management';
   $$('[data-i18n]').forEach(el => { el.innerHTML = T(el.dataset.i18n); });
   $$('[data-i18n-title]').forEach(el => { el.title = T(el.dataset.i18nTitle); });
   $$('[data-i18n-aria]').forEach(el => el.setAttribute('aria-label', T(el.dataset.i18nAria)));

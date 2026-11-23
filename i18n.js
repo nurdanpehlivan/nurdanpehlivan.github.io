@@ -8,7 +8,7 @@ const UI = {
   'nav.projects': { tr: 'Projeler', en: 'Projects' },
   'nav.skills': { tr: 'Yetenekler', en: 'Skills' },
   'nav.experience': { tr: 'Deneyim', en: 'Experience' },
-  'nav.pm': { tr: 'Liderlik', en: 'Leadership' },
+  'nav.pm': { tr: 'Proje Yönetimi', en: 'Project Mgmt' },
   'nav.awards': { tr: 'Başarılar', en: 'Awards' },
   'nav.contact': { tr: 'İletişim', en: 'Contact' },
   'ui.theme': { tr: 'Temayı değiştir', en: 'Toggle theme' },
@@ -19,8 +19,8 @@ const UI = {
   'hero.open': { tr: 'Yeni fırsatlara açığım', en: 'Open to new opportunities' },
   'hero.hi': { tr: 'Merhaba, ben', en: 'Hi, I\'m' },
   'hero.lead': {
-    tr: 'Kotlin ve Jetpack Compose ile modern Android uygulamaları geliştiren bir bilgisayar mühendisiyim. Boyner\'de canlıdaki uygulamalarda çalıştım; kendi projelerimde Clean Architecture, çok modüllü Gradle ve Gemini API ile uçtan uca ürünler çıkarıyorum.',
-    en: 'I\'m a computer engineer building modern Android apps with Kotlin and Jetpack Compose. I worked on production apps at Boyner, and in my own projects I ship end-to-end products with Clean Architecture, multi-module Gradle and the Gemini API.',
+    tr: 'Kotlin ve Jetpack Compose ile modern Android uygulamaları geliştiren, aynı zamanda projeleri planlayıp ekipleri yöneten bir bilgisayar mühendisiyim. Boyner\'de canlıdaki uygulamalarda çalıştım; 2000+ katılımcılı bir programın süreçlerini yönettim ve 50\'den fazla ekibe mentorluk yaptım.',
+    en: 'I\'m a computer engineer who builds modern Android apps with Kotlin and Jetpack Compose, and also plans projects and leads teams. I worked on production apps at Boyner, ran operations for a 2,000+ participant program and mentored 50+ teams.',
   },
   'hero.cta1': { tr: 'Projelerimi gör', en: 'See my work' },
 
@@ -35,15 +35,15 @@ const UI = {
   'show.l4': { tr: '<b>Cloudflare Workers + D1</b> ile senkronizasyon ve aile paylaşımı', en: 'Sync and household sharing with <b>Cloudflare Workers + D1</b>' },
   'show.cta': { tr: 'Detaylar ve ekranlar', en: 'Details & screens' },
 
-  'pm.kicker': { tr: '06 · Proje Yönetimi & Liderlik', en: '06 · Project Management & Leadership' },
+  'pm.kicker': { tr: '04 · Project Management & Liderlik', en: '04 · Project Management & Leadership' },
   'pm.title': { tr: 'Kodun ötesinde: ekipleri ve süreçleri yönetmek', en: 'Beyond code: coordinating teams and delivery' },
   'pm.sub': {
-    tr: 'Teknik altyapımı proje koordinasyonu ve ekipler arası iletişimle birleştiriyorum. Google Project Management sertifikalıyım.',
-    en: 'I combine my technical background with project coordination and cross-functional communication. Google Project Management certified.',
+    tr: 'Teknik altyapımı proje yönetimi ve ekipler arası iletişimle birleştiriyorum. Scrum ve Kanban ile çalışan çevik ekiplerde yer aldım; yer aldığım hemen her ekipte planlamayı ve koordinasyonu üstlendim. Google Project Management sertifikalıyım.',
+    en: 'I combine my technical background with project management and cross-functional communication. I\'ve worked in agile teams using Scrum and Kanban, and in almost every team I\'ve joined I took on planning and coordination. Google Project Management certified.',
   },
 
   'about.kicker': { tr: '01 · Hakkımda', en: '01 · About' },
-  'about.title': { tr: 'Kodu, kullanıcıya dokunan ürüne çeviriyorum.', en: 'I turn code into products people actually use.' },
+  'about.title': { tr: 'Kodu yazıyor, projeyi sonuna kadar götürüyorum.', en: 'I write the code and see the project through.' },
   'about.p1': {
     tr: 'Kastamonu Üniversitesi Bilgisayar Mühendisliği mezunuyum (2026) ve Gebze\'de yaşıyorum. Boyner\'deki 4 aylık uzun dönem stajımda, canlıdaki <b>Boyner Now</b> ve <b>Horizon</b> projelerinde UI geliştirme, state yönetimi ve stabilizasyon çalışmalarında yer aldım.',
     en: 'I graduated in Computer Engineering from Kastamonu University (2026) and live in Gebze, Türkiye. During a 4-month long-term internship at Boyner, I worked on UI development, state management and stability in the production <b>Boyner Now</b> and <b>Horizon</b> projects.',
@@ -53,13 +53,13 @@ const UI = {
     en: 'In my own projects I build end-to-end Android apps with MVVM/MVI, Clean Architecture, multi-module Gradle, Hilt, Room and the Gemini API — like <b>Frizzy</b>, which builds your pantry from a photo, and <b>Mimo</b>, which keeps your whole day in one encrypted timeline.',
   },
   'about.p3': {
-    tr: 'TÜBİTAK 2209-A projemi <b>ICENSS 2026</b>\'da yayımladım, UDHAM yarışmasında <b>Türkiye 2.liği</b> kazandım. Agile/Scrum ekiplerinde çalışma, kod incelemesi ve birim testi deneyimim var.',
-    en: 'My TÜBİTAK 2209-A project was published at <b>ICENSS 2026</b>, and I won <b>2nd place in Türkiye</b> at the UDHAM competition. I\'m experienced in Agile/Scrum teams, code reviews and unit testing.',
+    tr: 'Proje yönetimi tarafında TUSAŞ LIFT UP bitirme projesinde <b>takım lideri</b> olarak planlama, görev dağılımı ve paydaş iletişimini yürüttüm; 2000+ katılımcıya ulaşan bir programı koordine edip <b>50\'den fazla ekibe</b> mentorluk yaptım. COP31 İklim Teknolojileri Creathonu\'nda 200\'den fazla başvuru arasından <b>ilk 10\'a</b> girdik, UDHAM yarışmasında <b>Türkiye 2.liği</b> kazandım.',
+    en: 'On the project management side, I led planning, task allocation and stakeholder communication as <b>team lead</b> of the Turkish Aerospace LIFT UP capstone, coordinated a program reaching 2,000+ participants and mentored <b>50+ teams</b>. We made the <b>top 10</b> out of 200+ applications at the COP31 Climate Technologies Creathon, and I won <b>2nd place in Türkiye</b> at the UDHAM competition.',
   },
   'stats.intern': { tr: 'Staj deneyimi', en: 'Internships' },
   'stats.apps': { tr: 'Geliştirdiğim uygulama', en: 'Apps built' },
   'stats.teams': { tr: 'Mentorluk yaptığım takım', en: 'Teams mentored' },
-  'stats.paper': { tr: 'Uluslararası bildiri · ICENSS', en: 'International paper · ICENSS' },
+  'stats.paper': { tr: 'Katılımcıya ulaşan program koordinasyonu', en: 'Participants in a program I coordinated' },
 
   'projects.kicker': { tr: '03 · Projeler', en: '03 · Projects' },
   'projects.title': { tr: 'Seçilmiş işler', en: 'Selected work' },
@@ -74,7 +74,7 @@ const UI = {
   'projects.play': { tr: 'Google Play\'de', en: 'Get it on Google Play' },
   'projects.playNote': { tr: 'Uygulama şu an Google Play\'de test aşamasında; mağaza sayfası herkese açık yayınla birlikte görünür olacak.', en: 'The app is currently in testing on Google Play; the store page becomes public with the full release.' },
 
-  'skills.kicker': { tr: '04 · Yetenekler', en: '04 · Skills' },
+  'skills.kicker': { tr: '05 · Yetenekler', en: '05 · Skills' },
   'skills.title': { tr: 'Araç kutum', en: 'My toolbox' },
   'skills.sub': {
     tr: 'Üzerine gel: o teknolojiyi kullandığım projeler parlar. Noktalı olanlara tıkla: projeleri filtrele.',
@@ -82,7 +82,7 @@ const UI = {
   },
   'skills.used': { tr: '{t}: deneyimlerimde kullandım', en: '{t}: used in my work experience' },
 
-  'exp.kicker': { tr: '05 · Deneyim', en: '05 · Experience' },
+  'exp.kicker': { tr: '06 · Deneyim', en: '06 · Experience' },
   'exp.title': { tr: 'Yol haritam', en: 'My journey' },
 
   'awards.kicker': { tr: '07 · Başarılar', en: '07 · Awards' },
@@ -91,8 +91,8 @@ const UI = {
   'contact.kicker': { tr: '08 · İletişim', en: '08 · Contact' },
   'contact.title': { tr: 'Birlikte bir şey <span class="grad">inşa edelim</span>.', en: 'Let\'s <span class="grad">build something</span> together.' },
   'contact.sub': {
-    tr: 'Android geliştirici pozisyonları, yapay zekâ projeleri ya da sadece merhaba demek için yazabilirsin.',
-    en: 'Reach out about Android developer roles, AI projects, or just to say hi.',
+    tr: 'Android geliştirici ya da project management pozisyonları, projeler ya da sadece merhaba demek için yazabilirsin.',
+    en: 'Reach out about Android developer or project management roles, projects, or just to say hi.',
   },
   'contact.mail': { tr: 'E-posta gönder', en: 'Send an e-mail' },
 
@@ -114,8 +114,8 @@ const UI = {
 
 
 const ROLES = {
-  tr: ['Android Developer', 'Kotlin & Jetpack Compose', 'Yapay zekâ entegrasyonları', 'Clean Architecture tutkunu', 'Uçtan uca ürün geliştirici'],
-  en: ['Android Developer', 'Kotlin & Jetpack Compose', 'AI integrations', 'Clean Architecture enthusiast', 'End-to-end product builder'],
+  tr: ['Android Developer', 'Project Management', 'Kotlin & Jetpack Compose', 'Agile / Scrum', 'Uçtan uca ürün geliştirici'],
+  en: ['Android Developer', 'Project Management', 'Kotlin & Jetpack Compose', 'Agile / Scrum', 'End-to-end product builder'],
 };
 
 const CATEGORIES = [
@@ -130,7 +130,7 @@ const PROJECTS = [
   {
     id: 'frizzy', cats: ['android', 'ai'], live: true,
     title: 'Frizzy (Shelfie)', subtitle: { tr: 'Akıllı kiler ve gıda israfı takibi', en: 'Smart pantry & food waste tracker' }, year: '2026',
-    badge: { tr: 'Google Play · Test', en: 'Google Play · Testing' },
+    badge: { tr: 'Google Play · Yayında', en: 'Google Play · Live' },
     icon: { img: 'assets/frizzy/icon-512.png' },
     shots: [1, 2, 3, 4, 5, 6].map(i => `assets/frizzy/shot-${i}.png`),
     short: {
@@ -198,7 +198,7 @@ const PROJECTS = [
   {
     id: 'mimo', cats: ['android', 'ai'],
     title: 'Mimo', subtitle: { tr: 'Günlük ve yaşam takibi', en: 'Journal & life tracking' }, year: '2026',
-    badge: { tr: 'Google Play · Test', en: 'Google Play · Testing' }, live: true,
+    badge: { tr: 'Google Play · Test', en: 'Google Play · Testing' }, live: true, playTest: true,
     icon: { img: 'assets/mimo/icon.png', emoji: '📔', bg: 'linear-gradient(135deg,#f9a8d4,#a78bfa)' },
     shots: [1, 2, 3, 4].map(i => `assets/mimo/shot-${i}.jpg`),
     short: {
@@ -290,7 +290,7 @@ const PROJECTS = [
     id: 'boyner', cats: ['android'],
     title: 'Boyner Now & Horizon', subtitle: { tr: 'Boyner Büyük Mağazacılık · Android', en: 'Boyner Department Stores · Android' }, year: '2026',
     badge: { tr: 'İş deneyimi', en: 'Work' },
-    icon: { emoji: '🛍️', bg: 'linear-gradient(135deg,#fca5a5,#7c6cff)' },
+    icon: { logo: 'assets/boyner/logo.svg', wide: true, emoji: '🛍️', bg: 'linear-gradient(135deg,#ffffff,#ffe4e3)' },
     short: {
       tr: 'Canlıdaki uygulamalarda tasarım sistemine uygun Compose UI, reaktif veri akışı ve crash/stabilizasyon çalışmaları.',
       en: 'Design-system Compose UI, reactive data flow and crash/stability work on production apps.',
@@ -449,7 +449,7 @@ const PM = [
   { icon: '🌱', stat: '2000+', title: { tr: 'GİRVAK topluluk koordinasyonu', en: 'GİRVAK community coordination' },
     text: { tr: '2000\'den fazla katılımcıya ulaşan topluluk süreçleri; bootcamp\'te 50\'den fazla ekibe mentorluk, proje planlarının ve ilerlemenin takibi, çevrim içi etkinlik operasyonu.', en: 'Community operations reaching 2,000+ participants; mentored 50+ bootcamp teams and tracked their plans and progress; ran online event operations.' } },
   { icon: '🔁', stat: 'Agile / Scrum', title: { tr: 'Boyner sprint koordinasyonu', en: 'Sprint coordination at Boyner' },
-    text: { tr: 'Ürün, tasarım ve yazılım ekipleri arasında koordinasyon; hata önceliklendirme, süreç iyileştirme ve yayın hazırlığı.', en: 'Coordination between product, design and engineering; bug prioritization, process improvement and release preparation.' } },
+    text: { tr: 'Scrum ve Kanban ile çalışan ekipte ürün, tasarım ve yazılım arasında koordinasyon; hata önceliklendirme, süreç iyileştirme ve yayın hazırlığı.', en: 'Coordination between product, design and engineering in a team using Scrum and Kanban; bug prioritization, process improvement and release preparation.' } },
   { icon: '🎤', stat: 'GDSC', title: { tr: 'Etkinlik ve sponsorluk yönetimi', en: 'Event & sponsorship management' },
     text: { tr: 'Build with AI ve Kariyer Günü organizasyonlarında etkinlik planlaması, ekip koordinasyonu; topluluk, sponsor ve konuşmacı iletişimi.', en: 'Event planning and team coordination for Build with AI and Career Day; communication with the community, sponsors and speakers.' } },
   { icon: '🧭', stat: { tr: 'Uçtan uca', en: 'End to end' }, title: { tr: 'Kişisel ürünler: Frizzy & Mimo', en: 'Own products: Frizzy & Mimo' },
@@ -459,7 +459,7 @@ const PM = [
 ];
 
 const PM_SKILLS = [
-  'Agile / Scrum', { tr: 'Sprint Planlama', en: 'Sprint Planning' }, { tr: 'Görev Takibi', en: 'Task Tracking' }, { tr: 'Önceliklendirme', en: 'Prioritization' },
+  'Agile / Scrum', 'Kanban', { tr: 'Sprint Planlama', en: 'Sprint Planning' }, { tr: 'Görev Takibi', en: 'Task Tracking' }, { tr: 'Önceliklendirme', en: 'Prioritization' },
   { tr: 'Paydaş Yönetimi', en: 'Stakeholder Management' }, { tr: 'Raporlama', en: 'Reporting' }, { tr: 'Dokümantasyon', en: 'Documentation' }, 'SDLC',
   { tr: 'Etkinlik Yönetimi', en: 'Event Management' }, { tr: 'Mentorluk', en: 'Mentoring' }, 'Jira', 'Confluence', 'Notion', 'Google Workspace', 'MS Office', 'Canva',
 ];

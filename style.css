@@ -216,6 +216,12 @@ kbd {
 .card.featured .card-media { height: auto; width: 46%; min-height: 330px; }
 .card-media .art { font-size: 4.2rem; filter: drop-shadow(0 10px 20px rgba(0, 0, 0, .3)); transition: transform .5s cubic-bezier(.3, 1.4, .5, 1); }
 .card:hover .card-media .art { transform: scale(1.15) rotate(-6deg); }
+.card-media .cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
+.card:hover .card-media .cover { transform: scale(1.05); }
+.card-media .logo { width: 96px; height: 96px; object-fit: contain; border-radius: 22px; box-shadow: 0 14px 30px -10px rgba(0, 0, 0, .35); transition: transform .5s cubic-bezier(.3, 1.4, .5, 1); }
+.card:hover .card-media .logo { transform: scale(1.1) rotate(-4deg); }
+.card-media .logo.wide { width: 62%; max-width: 240px; height: auto; border-radius: 0; box-shadow: none; }
+.card:hover .card-media .logo.wide { transform: scale(1.06); }
 .card-media .shots { display: flex; gap: 12px; transform: rotate(-8deg) translateY(16px); transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
 .card:hover .card-media .shots { transform: rotate(-4deg) translateY(4px) scale(1.04); }
 .card-media .shots img { width: 120px; border-radius: 14px; box-shadow: 0 16px 30px -10px rgba(0, 0, 0, .5); }
