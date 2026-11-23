@@ -469,6 +469,7 @@ function applyLang() {
   $$('[data-i18n-title]').forEach(el => { el.title = T(el.dataset.i18nTitle); });
   $$('[data-i18n-aria]').forEach(el => el.setAttribute('aria-label', T(el.dataset.i18nAria)));
   pInput.placeholder = T('palette.placeholder');
+  $$('[data-cv]').forEach(a => { a.href = `assets/cv/Nurdan_Pehlivan_CV_${lang === 'tr' ? 'TR' : 'EN'}.pdf`; });
   $$('#langBtn [data-l]').forEach(s => s.classList.toggle('on', s.dataset.l === lang));
   // a skill filter is a translated label, so drop it if it no longer exists
   if (currentTech && !PROJECTS.some(p => projTech(p).includes(currentTech))) currentTech = null;

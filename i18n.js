@@ -12,6 +12,7 @@ const UI = {
   'nav.awards': { tr: 'Başarılar', en: 'Awards' },
   'nav.contact': { tr: 'İletişim', en: 'Contact' },
   'ui.theme': { tr: 'Temayı değiştir', en: 'Toggle theme' },
+  'ui.cv': { tr: 'CV\'mi indir', en: 'Download CV' },
   'ui.copied': { tr: 'E-posta kopyalandı ✓', en: 'E-mail copied ✓' },
   'ui.details': { tr: 'Detaylar', en: 'Details' },
   'ui.langSwitched': { tr: 'Türkçe', en: 'English' },
