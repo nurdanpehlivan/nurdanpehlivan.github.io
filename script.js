@@ -381,7 +381,10 @@ const awardList = $('#awardList');
 function renderAwards() {
   awardList.innerHTML = AWARDS.map(a => `
     <article class="award reveal${a.featured ? ' featured' : ''}">
-      ${a.img ? `<img class="award-img" src="${a.img}" alt="${L(a.title)}" loading="lazy">` : ''}
+      ${a.img ? `<div class="award-media">
+        <img class="award-img" src="${a.img}" alt="${L(a.title)}" loading="lazy">
+        ${a.gallery ? `<div class="award-thumbs">${a.gallery.map((g, i) => `<button type="button" class="award-thumb${i === 0 ? ' active' : ''}" data-src="${g}" aria-label="${i + 1}"><img src="${g}" alt="" loading="lazy"></button>`).join('')}</div>` : ''}
+      </div>` : ''}
       <div class="award-body">
         <div class="award-icon">${a.icon}</div>
         <p class="award-date">${L(a.date)}</p>
@@ -389,6 +392,11 @@ function renderAwards() {
         <p>${L(a.text)}</p>
       </div>
     </article>`).join('');
+  awardList.querySelectorAll('.award-thumb').forEach(t => t.addEventListener('click', () => {
+    const media = t.closest('.award-media');
+    media.querySelector('.award-img').src = t.dataset.src;
+    media.querySelectorAll('.award-thumb').forEach(x => x.classList.toggle('active', x === t));
+  }));
   observeReveals(awardList);
 }
 
