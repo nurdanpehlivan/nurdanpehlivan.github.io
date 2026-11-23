@@ -347,6 +347,7 @@ const PROJECTS = [
     title: { tr: 'Dokunsal Uyarı Sistemi', en: 'Haptic Warning System' }, subtitle: { tr: 'UDHAM Erişilebilir Türkiye 2053', en: 'UDHAM Accessible Türkiye 2053' }, year: '2026',
     badge: { tr: '🏆 Türkiye 2.si', en: '🏆 2nd in Türkiye' },
     icon: { emoji: '🚆', bg: 'linear-gradient(135deg,#c4b5fd,#22d3c5)' },
+    cover: 'assets/udham/poster.jpg', shots: ['assets/udham/poster.jpg'],
     short: {
       tr: 'Raylı sistemlerde çift duyusal engelliler için güvenli ve doğrulanabilir BLE tabanlı dokunsal uyarı sistemi.',
       en: 'A secure, verifiable BLE-based haptic warning system for deafblind passengers in rail systems.',
@@ -429,7 +430,7 @@ const AWARDS = [
     date: { tr: 'Kasım 2026 · Antalya', en: 'November 2026 · Antalya' }, title: { tr: 'COP31 İklim Teknolojileri Creathonu', en: 'COP31 Climate Technologies Creathon' },
     text: { tr: 'Antalya Teknokent\'te düzenlenen COP31 İklim Teknolojileri Creathonu\'nda ekibimle <b>ÖlçKazan</b>\'ı geliştirdik; 3 ülkeden 200\'den fazla başvuru arasından <b>ilk 10\'a</b> girerek projeyi COP31 sahnesinde sundum. ÖlçKazan, kurum yemekhanelerindeki gıda israfını ek donanım gerektirmeden yapay zekâ ile ölçüp ertesi günün üretimini planlamaya yardımcı olan bir platform. Hedefimiz, gıda israfını ve karbon yükünü görünür kılıp azaltmak.',
       en: 'At the COP31 Climate Technologies Creathon at Antalya Teknokent, my team and I built <b>ÖlçKazan</b>. We made the <b>top 10</b> out of 200+ applications from 3 countries, and I pitched it on the COP31 stage. ÖlçKazan is a platform that uses AI to measure food waste in institutional cafeterias without extra hardware and helps plan the next day\'s production. Our goal is to make food waste and its carbon footprint visible, and to reduce them.' } },
-  { icon: '🏆', date: { tr: 'Haziran 2026', en: 'June 2026' }, title: { tr: 'Demiryolu Kategorisi Türkiye 2.liği', en: '2nd Place in Türkiye, Railway Category' },
+  { icon: '🏆', img: 'assets/udham/poster.jpg', date: { tr: 'Haziran 2026', en: 'June 2026' }, title: { tr: 'Demiryolu Kategorisi Türkiye 2.liği', en: '2nd Place in Türkiye, Railway Category' },
     text: { tr: 'UDHAM 4. Erişilebilir Türkiye 2053 Ar-Ge Fikir Yarışması — raylı sistemlerde çift duyusal engelliler için BLE tabanlı dokunsal uyarı sistemi.', en: 'UDHAM 4th Accessible Türkiye 2053 R&D Idea Competition — a BLE-based haptic warning system for deafblind passengers in rail systems.' } },
   { icon: '🏕️', img: 'assets/kamp/photo-1.jpg', gallery: [1, 2, 3, 4].map(i => `assets/kamp/photo-${i}.jpg`), date: { tr: 'Ekim 2026', en: 'October 2026' }, title: { tr: 'Kamp+ Bilişim Kampı', en: 'Kamp+ IT Camp' },
     text: { tr: 'T.C. Gençlik ve Spor Bakanlığı & Turkcell Akademi — Android, Kotlin ve Jetpack Compose eğitimi.', en: 'Ministry of Youth and Sports & Turkcell Academy — Android, Kotlin and Jetpack Compose training.' } },
