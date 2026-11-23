@@ -380,11 +380,14 @@ function updateTimeline() {
 const awardList = $('#awardList');
 function renderAwards() {
   awardList.innerHTML = AWARDS.map(a => `
-    <article class="award reveal">
-      <div class="award-icon">${a.icon}</div>
-      <p class="award-date">${L(a.date)}</p>
-      <h3>${L(a.title)}</h3>
-      <p>${L(a.text)}</p>
+    <article class="award reveal${a.featured ? ' featured' : ''}">
+      ${a.img ? `<img class="award-img" src="${a.img}" alt="${L(a.title)}" loading="lazy">` : ''}
+      <div class="award-body">
+        <div class="award-icon">${a.icon}</div>
+        <p class="award-date">${L(a.date)}</p>
+        <h3>${L(a.title)}</h3>
+        <p>${L(a.text)}</p>
+      </div>
     </article>`).join('');
   observeReveals(awardList);
 }

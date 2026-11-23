@@ -161,6 +161,41 @@ const PROJECTS = [
     links: [{ play: true, url: PLAY + 'com.nurdanpehlivan.shelfie' }, { label: 'GitHub', url: GH + 'Shelfie' }],
   },
   {
+    id: 'groupxray', cats: ['android'], live: true,
+    title: 'GroupXray', subtitle: { tr: 'WhatsApp grup sohbeti röntgeni', en: 'WhatsApp group chat X-ray' }, year: '2026',
+    badge: { tr: 'Web · Yayında', en: 'Web · Live' },
+    icon: { img: 'assets/groupxray/icon.png', emoji: '🩻', bg: 'linear-gradient(135deg,#3df5ff,#ff4fa3)' },
+    shots: [1, 2, 3, 4, 5, 6].map(i => `assets/groupxray/shot-${i}.jpg`),
+    short: {
+      tr: 'Grup sohbetini dışa aktar; kim çok yazıyor, kim ortadan kayboluyor, kim konuyu öldürüyor, Spotify Wrapped tarzı kartlarla gör. Herkes bir ödül alır.',
+      en: 'Export a group chat and see who talks the most, who vanishes and who kills the conversation in Spotify Wrapped-style cards. Everyone gets an award.',
+    },
+    desc: {
+      tr: 'WhatsApp grup sohbetlerini analiz edip istatistikleri paylaşılabilir hikâye kartlarına ve bir ödül törenine çeviren uygulama. Pazar araştırmasından fikre, Android uygulamasından web sürümüne ve yayına kadar uçtan uca benim işim. Sohbet cihazdan hiç çıkmaz: sunucu yok, hesap yok.',
+      en: 'An app that analyzes WhatsApp group chats and turns the stats into shareable story cards and an awards ceremony. From market research and the idea to the Android app, the web version and launch, it\'s built end to end by me. The chat never leaves the device: no server, no account.',
+    },
+    points: {
+      tr: [
+        'Clean Architecture + MVVM ile Jetpack Compose Android uygulaması; saf Kotlin domain katmanı (ileride Kotlin Multiplatform\'a hazır) ve manuel DI',
+        'Android ve iPhone dışa aktarmalarını (TR/EN, 12/24 saat, .txt/.zip) okuyan parser, istatistik motoru ve her üyeye ödül veren deterministik ödül motoru',
+        'Gizlilik öncelikli tasarım: internet izni yok, raporlar yalnızca bellekte, paylaşım önbelleği her açılışta temizleniyor',
+        'Kartları 1080×1920 PNG\'ye çevirip WhatsApp\'tan paylaşma; "Paylaş" menüsünden doğrudan dosya alma',
+        'Aynı kurallarla bağımlılıksız JavaScript web sürümü; Netlify\'da yayında, CSP ile veri gönderimi tamamen kapalı',
+        'Android tarafında 33, web tarafında 14 birim testi',
+      ],
+      en: [
+        'Jetpack Compose Android app with Clean Architecture + MVVM; a pure-Kotlin domain layer (ready for Kotlin Multiplatform) and manual DI',
+        'A parser for Android and iPhone exports (TR/EN, 12/24-hour, .txt/.zip), a stats engine and a deterministic award engine that gives every member an award',
+        'Privacy-first design: no internet permission, reports kept in memory only, share cache cleared on every launch',
+        'Cards rendered as 1080×1920 PNGs and shared to WhatsApp; files received directly from the share sheet',
+        'A dependency-free JavaScript web version with the same rules; live on Netlify, with outgoing data fully blocked by CSP',
+        '33 unit tests on Android and 14 on the web',
+      ],
+    },
+    tech: ['Kotlin', 'Jetpack Compose', 'Clean Architecture', 'MVVM', 'Coroutines & Flow', 'Navigation Compose', 'JUnit', 'JavaScript', 'Canvas API'],
+    links: [{ label: 'Web', url: 'https://shimmering-jalebi-266774.netlify.app' }, { label: 'GitHub', url: GH + 'GroupXray' }],
+  },
+  {
     id: 'mimo', cats: ['android', 'ai'],
     title: 'Mimo', subtitle: { tr: 'Günlük ve yaşam takibi', en: 'Journal & life tracking' }, year: '2026',
     badge: { tr: 'Google Play · Test', en: 'Google Play · Testing' }, live: true,
@@ -390,6 +425,8 @@ const EXPERIENCE = [
 ];
 
 const AWARDS = [
+  { icon: '🎤', featured: true, img: 'assets/cop31-stage.jpg', date: { tr: 'Kasım 2026 · Antalya', en: 'November 2026 · Antalya' }, title: { tr: 'COP31 Türkiye — Sahne Sunumu', en: 'COP31 Türkiye — On-stage Pitch' },
+    text: { tr: 'BM İklim Değişikliği Konferansı COP31 kapsamındaki hackathonda ekibimle geliştirdiğimiz, yemekhanelerdeki gıda israfını ölçerek azaltmayı hedefleyen projeyi COP31 sahnesinde sundum.', en: 'Pitched our hackathon project on the COP31 stage at the UN Climate Change Conference — a solution that measures and reduces food waste in cafeterias, built with my team.' } },
   { icon: '🏆', date: { tr: 'Haziran 2026', en: 'June 2026' }, title: { tr: 'Demiryolu Kategorisi Türkiye 2.liği', en: '2nd Place in Türkiye, Railway Category' },
     text: { tr: 'UDHAM 4. Erişilebilir Türkiye 2053 Ar-Ge Fikir Yarışması — raylı sistemlerde çift duyusal engelliler için BLE tabanlı dokunsal uyarı sistemi.', en: 'UDHAM 4th Accessible Türkiye 2053 R&D Idea Competition — a BLE-based haptic warning system for deafblind passengers in rail systems.' } },
   { icon: '📄', date: 'ICENSS 2026', title: { tr: 'Tam metin bildiri', en: 'Full paper' },
